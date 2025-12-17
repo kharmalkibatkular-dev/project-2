@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = LaundryGo qiuck wash
+title = My application
 
 # (str) Package name
-package.name = LaundryGoqiuckwash
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.yourcompany
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts =  py,png,jpg,jpeg,kv,atlas,json
+source.include_exts =  py,png,jpg,kv,atlas
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -29,7 +29,7 @@ source.include_exts =  py,png,jpg,jpeg,kv,atlas,json
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 1.0
+version = 0.1
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -37,7 +37,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,requests,pillow
+requirements = python3==3.7.6,hostpython3==3.7,6,kivy,
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.7.6
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
